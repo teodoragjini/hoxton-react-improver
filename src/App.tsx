@@ -55,13 +55,16 @@ function App() {
       <header>
         <h1>Pet Shop</h1>
       </header>
+      
       <ul className='pet-list'>
       {pets.map((pet) => (<li>
         <img src= {pet.image} alt="" width={300}/>
         <h3>{pet.breeds}</h3>
         <p>{pet.gender}</p>
         <p>{pet.age}</p>
-        <button>See More</button>
+        <button onClick={() => {
+
+        }}>See More</button>
       </li>
 
 ))}
